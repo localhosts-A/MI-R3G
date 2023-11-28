@@ -6,8 +6,8 @@ cd tools
 tar xjf buildroot-gcc463_32bits.tar.bz2
 sudo rm -rf /opt/brcm
 sudo rm -rf /opt/buildroot-gcc463
-sudo ln -s ~/asuswrt-modx/tools/brcm /opt/brcm
-sudo ln -s ~/asuswrt-modx/tools/buildroot-gcc463 /opt/buildroot-gcc463
+sudo ln -s ~/MI-R3G/tools/brcm /opt/brcm
+sudo ln -s ~/MI-R3G/tools/buildroot-gcc463 /opt/buildroot-gcc463
 export PATH=/opt/brcm/hndtools-mipsel-linux/bin:$PATH
 export PATH=/opt/brcm/hndtools-mipsel-uclibc/bin:$PATH
 export PATH=/opt/buildroot-gcc463/bin:$PATH

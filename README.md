@@ -2,8 +2,7 @@
 MT7621AT华硕改版固件支持软件中心
 
 ## 如何编译固件
-1. cd release/src-ra-5010
-2. make model (currently available models are: rt-mir3g, rt-mir4a, rt-rm2100, rt-r2100)
+1. sh build.sh
 
 ## 不支持的功能
 - 双wan

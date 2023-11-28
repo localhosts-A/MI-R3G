@@ -4061,38 +4061,7 @@ else ifeq ($(BCMWL6A),y)
 	@cp $(LINUXDIR)/config_base.6a $(LINUXDIR)/config_$(lowercase_B)
 else
 	@if [ "$(RALINK)" = "y" ]; then \
-		if [ "$(BUILD_NAME)" = "RT-AC1200" ] || [ "$(BUILD_NAME)" = "RT-N600" ] ; then \
-			cp $(LINUXDIR)/ralink/Kconfig_$(lowercase_B) $(LINUXDIR)/ralink/Kconfig ; \
-			cp $(LINUXDIR)/config_base.MT7628 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-N11P_B1" ] || [ "$(BUILD_NAME)" = "RT-N10P_V3" ] ; then \
-			cp $(LINUXDIR)/ralink/Kconfig_rt-n11p_b1 $(LINUXDIR)/ralink/Kconfig ; \
-			cp $(LINUXDIR)/config_base.rt-n11p_b1 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RP-AC56" ]; then \
-			cp $(LINUXDIR)/ralink/Kconfig_$(lowercase_B) $(LINUXDIR)/ralink/Kconfig ; \
-			cp $(LINUXDIR)/config_base.MT7621 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-AC1200GA1" ] || [ "$(BUILD_NAME)" = "RT-AC1200GU" ]; then \
-			cp $(LINUXDIR)/ralink/Kconfig_$(lowercase_B) $(LINUXDIR)/ralink/Kconfig ; \
-			cp $(LINUXDIR)/config_base.MT7621_ROUTER $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-AC51U+" ] ||[ "$(BUILD_NAME)" = "RT-AC53" ]; then \
-			cp $(LINUXDIR)/ralink/Kconfig_$(lowercase_B) $(LINUXDIR)/ralink/Kconfig ; \
-			cp $(LINUXDIR)/config_base.MT7620 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RM-AC2100" ] || [ "$(BUILD_NAME)" = "RT-RM2100" ] || [ "$(BUILD_NAME)" = "RT-R2100" ]; then \
-			cp $(LINUXDIR)/config_base_rmac2100 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-MIR3P" ]; then \
-			cp $(LINUXDIR)/config_base_rtmir3p $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-E8820S" ]; then \
-			cp $(LINUXDIR)/config_base_rte8820s $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-A040WQ" ] || [ "$(BUILD_NAME)" = "RT-MSG1500" ]; then \
-			cp $(LINUXDIR)/config_base_rta040wq $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-NEWIFI2" ] || [ "$(BUILD_NAME)" = "RT-RS1200P" ]; then \
-			cp $(LINUXDIR)/config_base_rtnewifi2 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-MT1300" ]; then \
-			cp $(LINUXDIR)/config_base_rtmt1300 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-JDC1" ]; then \
-			cp $(LINUXDIR)/config_base_rtjdc1 $(LINUXDIR)/config_$(lowercase_B) ; \
-                elif [ "$(BUILD_NAME)" = "RT-XYC3" ]; then \
-			cp $(LINUXDIR)/config_base_rtxyc3 $(LINUXDIR)/config_$(lowercase_B) ; \
-		elif [ "$(BUILD_NAME)" = "RT-HIWIFI4" ] || [ "$(BUILD_NAME)" = "RT-NEWIFI3" ] || [ "$(BUILD_NAME)" = "RT-MIR3G" ]; then \
+		if [ "$(BUILD_NAME)" = "RT-MIR3G" ] ; then \
 			cp $(LINUXDIR)/config_base_rthiwifi4 $(LINUXDIR)/config_$(lowercase_B) ; \
 		else \
 			cp $(LINUXDIR)/config_base $(LINUXDIR)/config_$(lowercase_B) ; \

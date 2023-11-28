@@ -33,7 +33,7 @@ define platformRouterOptions
 		sed -i "/RTCONFIG_RALINK\>/d" $(1); \
 		echo "RTCONFIG_RALINK=y" >>$(1); \
 		sed -i "/CONFIG_RA_HW_NAT_IPV6/d" $(1); \
-		echo "# CONFIG_RA_HW_NAT_IPV6 is not set" >>$(1); \
+		echo "# CONFIG_RA_HW_NAT_IPV6=y" >>$(1); \
 		if [ "$(RT3883)" = "y" ]; then \
 			sed -i "/RTCONFIG_RALINK_RT3883/d" $(1); \
 			echo "RTCONFIG_RALINK_RT3883=y" >>$(1); \

@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="icon" href="images/favicon.png">
 <link href="/images/map-iconRouter_iphone.png" rel="apple-touch-icon" />
-<title><#Web_Title#> - <#menu1#></title>
+<title>小米路由器 - <#menu1#></title>
 <link rel="stylesheet" type="text/css" href="index_style.css">
 <link rel="stylesheet" type="text/css" href="form_style.css">
 <link rel="stylesheet" type="text/css" href="NM_style.css">

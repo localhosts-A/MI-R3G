@@ -8,7 +8,7 @@
 <meta HTTP-EQUIV="Expires" CONTENT="-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="icon" href="images/favicon.png">
-<title>ASUS Login</title>
+<title>小米路由登录页面</title>
 <style>
 body{
 	font-family: Arial, MS UI Gothic, MS P Gothic, sans-serif;
